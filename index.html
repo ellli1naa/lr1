@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота</title>
+</head>
+
+<body>
+    <h1 align="center">Лабораторна робота №1
+    Основи побудови та публікації HTML-документів</h1>
+
+    <table width="100%" border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <td width="20%" valign="top">
+                <h2>Навігація</h2>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#math">Завдання</a></li>
+                    <li><a href="#students">Успішність</a></li>
+                    <li><a href="#register">Реєстрація</a></li>
+                </ul>
+
+                <p>
+                    <a href="https://nure.ua" target="_blank">
+                        <img src="https://nure.ua/wp-content/themes/nure/images/logo.png?v=2.0" alt="ХНУРЕ" width="80"
+                            border="0">
+                    </a>
+                </p>
+            </td>
+
+            <td width="80%" valign="top">
+                <h2 id="math">Математичні тотожності та нерівності</h2>
+                <p>
+                    Основна <b>тригонометрична тотожність</b>: cos<sup>2</sup><b>α</b> + sin<sup>2</sup><b>α</b> = 1
+                </p>
+                <p>
+                    Приклад суворої нерівності: α &lt; β.
+                </p>
+                <p>
+                    Нестрога нерівність: α ≤ β означає, що або α &lt; β, або α = β.
+                </p>
+
+                <h2>Тестування з математики</h2>
+                <ol>
+                    <li>Що таке похідна функції?
+                        <ul>
+                            <li>Міра зростання функції</li>
+                            <li>Площа під кривою</li>
+                            <li>Границя функції</li>
+                        </ul>
+                    </li>
+                    <li>Яка з нерівностей є строгою?
+                        <ul>
+                            <li>α ≥ β</li>
+                            <li>α ≤ β</li>
+                            <li>α &lt; β</li>
+                        </ul>
+                    </li>
+                    <li>Яка з тотожностей є тригонометричною?
+                        <ul>
+                            <li>a² + b² = c²</li>
+                            <li>cos²α + sin²α = 1</li>
+                            <li>e<sup>iπ</sup> + 1 = 0</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2 id="students">Успішність студентів 3-го курсу</h2>
+                <table width="100%" border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th>Студент</th>
+                        <th>Вища математика</th>
+                        <th>Фізика</th>
+                        <th>Програмування</th>
+                        <th>Іноземна мова</th>
+                    </tr>
+                    <tr>
+                        <td>Іванов І.І.</td>
+                        <td align="center">95</td>
+                        <td align="center">87</td>
+                        <td align="center">92</td>
+                        <td align="center">78</td>
+                    </tr>
+                    <tr>
+                        <td>Петрова П.П.</td>
+                        <td align="center">88</td>
+                        <td align="center">91</td>
+                        <td align="center">85</td>
+                        <td align="center">94</td>
+                    </tr>
+                    <tr>
+                        <td>Сидоренко С.С.</td>
+                        <td align="center">76</td>
+                        <td align="center">82</td>
+                        <td align="center">90</td>
+                        <td align="center">79</td>
+                    </tr>
+                </table>
+
+                <h2 id="register">Форма реєстрації відвідувача</h2>
+                <form action="#" method="post">
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td>Ім'я:</td>
+                            <td><input type="text" name="firstname" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Прізвище:</td>
+                            <td><input type="text" name="lastname" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Електронна пошта:</td>
+                            <td><input type="text" name="email" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Стать:</td>
+                            <td>
+                                <input type="radio" name="gender" value="male"> Чоловіча
+                                <input type="radio" name="gender" value="female"> Жіноча
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Курс:</td>
+                            <td>
+                                <select name="course">
+                                    <option value="1">1 курс</option>
+                                    <option value="2">2 курс</option>
+                                    <option value="3" selected>3 курс</option>
+                                    <option value="4">4 курс</option>
+                                    <option value="5">5 курс</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Додаткова інформація:</td>
+                            <td>
+                                <textarea name="info" rows="4" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Дозволи:</td>
+                            <td>
+                                <input type="checkbox" name="subscribe" value="yes"> Отримувати розсилку
+                                <br>
+                                <input type="checkbox" name="agree" value="yes"> Погоджуюсь з правилами
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Зареєструватися">
+                                <input type="reset" value="Очистити">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <p align="center">
+        <small>© 2023 Освітній портал. Всі права захищені.</small>
+    </p>
+</body>
+
+</html>
